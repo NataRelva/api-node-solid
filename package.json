@@ -19,6 +19,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "googleapis": "^110.0.0"
   }
 }
