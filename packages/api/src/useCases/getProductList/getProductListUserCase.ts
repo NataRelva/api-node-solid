@@ -1,4 +1,4 @@
-import { RequestGoogleSheets } from '../../entities/RequestGoogleSheets';
+import { RequestGoogleSheets } from '../../repositories/RequestGoogleSheets';
 import { IProductRepository } from '../../repositories/IProductRepository';
 export class GetProductListUserCase {
   constructor(private productRepository: IProductRepository) {}

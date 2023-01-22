@@ -1,6 +1,6 @@
-import { RequestGoogleSheets } from './../entities/RequestGoogleSheets';
-import { Product } from './../entities/Product';
+import { DataProduct } from './../@types/DataProduct';
+import { RequestGoogleSheets } from './RequestGoogleSheets';
 
 export interface IProductRepository {
-  getProductList(dataRequest: RequestGoogleSheets): Promise<Product[]>;
+  getProductList(dataRequest: RequestGoogleSheets): Promise<DataProduct>;
 }

@@ -1,19 +1,15 @@
+import { DataAddress } from '../@types/DataAddress';
 import { v4 as uuid } from 'uuid';
 
 export class User {
   public readonly id: string;
+  public password: string;
 
   public name: string;
   public email: string;
-  public password: string;
   public phone: string;
-  public cpf_cnpj: string;
-  public address: {
-    cep: string;
-    street: string;
-    number: string;
-    complement: string;
-  };
+  public cpfCnpj: string;
+  public addresses: DataAddress;
 
   constructor(props: Omit<User, 'id'>, id?: string) {
     // Pega todas as propriedades de props e adiciona uma por uma dentro do objeto this
